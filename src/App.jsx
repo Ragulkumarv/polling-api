@@ -1,11 +1,8 @@
 import "./App.css";
+import DataPolling from "./components/DataPolling";
 
 function App() {
-  return (
-    <>
-      <h1 className="text-3xl font-bold ">Hello world!!!!!</h1>
-    </>
-  );
+  return <DataPolling />;
 }
 
 export default App;
