@@ -12,6 +12,9 @@ const DataPolling = () => {
       const resp = await fetch(
         `${API_URL}${Math.floor(Math.random() * 100) + 1}`
       );
+      // Rounds the number down to the nearest integer. So 99.999 becomes 99, and 0.001 becomes 0.
+
+      // + 1 This shifts the range from 0–99 to 1–100.
       const data = await resp.json();
       setPolldata([data]);
       setError("");
